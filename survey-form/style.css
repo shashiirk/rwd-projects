@@ -7,7 +7,7 @@
 body {
   font-family: 'Oxygen', sans-serif;
   border: 2px blue solid;
-  background-color: #f0f0f0;
+  background-color: #c8c8c8;
 }
 
 header {
@@ -21,19 +21,19 @@ header {
   font-size: 3rem;
   background-color: #004c9f;
   color: #ffc200;
-  padding: 18px 0px;
+  padding: 18px 10px;
 }
 
 #heading {
   font-size: 1.6rem;
   color: #e61e50;
-  padding: 10px 0px 4px;
+  padding: 10px 10px 4px;
 }
 
 #description {
   font-weight: bold;
   color: #4e4e4e;
-  padding: 4px 0px 10px;
+  padding: 4px 10px 10px;
 }
 
 #survey-form {
@@ -58,6 +58,8 @@ header {
 
 .selection div {
   margin: 6px 0px;
+  display: flex;
+  align-items: center;
 }
 
 .form-group label,
@@ -75,10 +77,10 @@ header {
   width: 100%;
   padding: 12px;
   font-size: 1.0rem;
-  margin: 6px 0px;
-  border: 2px #f0f0f0 solid;
+  margin: 8px 0px;
+  border: 2px #c8c8c8 solid;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: #c8c8c8;
 }
 
 .form-group input[type="text"],
@@ -100,7 +102,7 @@ header {
 .form-group input[type="email"]:focus::placeholder,
 .form-group input[type="number"]:focus::placeholder, 
 .form-group textarea:focus::placeholder {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .form-group input[type="text"]:focus,
@@ -110,7 +112,19 @@ header {
 .form-group textarea:focus {
   background-color: #fff;
   outline: none;
-  border-color: #c4c4c4;
+  border-color: #c8c8c8;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin-right: 6px;
+}
+
+.form-group p {
+  padding-bottom: 4px;
 }
 
 .form-group textarea {
@@ -129,11 +143,24 @@ select {
   cursor: pointer;
   color: #fff;
   background-color: #44ff44;
+  border: none;
   font-weight: 600;
   outline: none;
   transition: all 400ms ease;
 }
 
 .form-group button:hover {
-  background-color: #04dd04;
+  background-color: #05aa05;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  #survey-form {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
