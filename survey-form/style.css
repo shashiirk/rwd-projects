@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  border: 2px blue solid;
+  background-color: #f0f0f0;
+}
+
+header {
+  width: 50%;
+  margin: 20px auto 0px;
+  text-align: center;
+  background-color: #fff;
+}
+
+#title {
+  font-size: 3rem;
+  background-color: #004c9f;
+  color: #ffc200;
+  padding: 18px 0px;
+}
+
+#heading {
+  font-size: 1.6rem;
+  color: #e61e50;
+  padding: 10px 0px 4px;
+}
+
+#description {
+  font-weight: bold;
+  color: #4e4e4e;
+  padding: 4px 0px 10px;
+}
+
+#survey-form {
+  background-color: #fff;
+  width: 50%;
+  margin: 0px auto 20px;
+  padding: 2px 24px 2px;
+  font-size: 1.1rem;
+}
+
+.block {
+  display: inline-block;
+}
+
+.clue {
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin: 28px 0px;
+}
+
+.selection div {
+  margin: 6px 0px;
+}
+
+.form-group label,
+.form-group p {
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea,
+.form-group button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.0rem;
+  margin: 6px 0px;
+  border: 2px #f0f0f0 solid;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group textarea {
+  transition: all 600ms ease;
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="number"]::placeholder,
+.form-group textarea::placeholder {
+  transition: all 600ms ease;
+  color: #686868;
+}
+
+.form-group input[type="text"]:focus::placeholder,
+.form-group input[type="email"]:focus::placeholder,
+.form-group input[type="number"]:focus::placeholder, 
+.form-group textarea:focus::placeholder {
+  opacity: 0.6;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="number"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  background-color: #fff;
+  outline: none;
+  border-color: #c4c4c4;
+}
+
+.form-group textarea {
+  font-size: 1.3rem;
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+  transition: all 400ms ease;
+}
+
+select {
+  color: #484848;
+}
+
+.form-group button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #44ff44;
+  font-weight: 600;
+  outline: none;
+  transition: all 400ms ease;
+}
+
+.form-group button:hover {
+  background-color: #04dd04;
+}

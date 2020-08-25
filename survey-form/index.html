@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <title>ABC University | Student Survey</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">ABC University</h1>
+    <h3 id="heading">Student Survey Form</h3>
+    <p id="description">Thank you for taking the time to help us improve the University</p>
+  </header>
+  <form action="#" id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label" class="block">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label" class="block">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label" class="block">Age <span class="clue">(optional)</span></label>
+      <input type="number" id="number" placeholder="Enter your age" min="16" max="28">
+    </div>
+    <div class="form-group">
+      <label for="dropdown" class="block">What is the program you are currently pursuing?</label>
+      <select name="program" id="dropdown">
+        <option value="" disabled selected>Select your program</option>
+        <option value="ug">Under Graduation (UG)</option> 
+        <option value="pg">Post Graduation (UG)</option> 
+        <option value="phd">Doctarate Programs (Ph.D)</option> 
+      </select>
+    </div>
+    <div class="form-group selection">
+      <p>Would your recommend ABC University to others?</p>
+      <div>
+        <input type="radio" name="choice" id="definitely" value="10">
+        <label for="definitely">Definitely</label>
+      </div>
+      <div>
+        <input type="radio" name="choice" id="maybe" value="5">
+        <label for="maybe">May be</label>
+      </div>
+      <div>
+        <input type="radio" name="choice" id="no" value="0">
+        <label for="no">Not at all</label>
+      </div>
+    </div>
+    <div class="form-group selection">
+      <p>What do you want to be improved in ABC University? <span class="clue">(Check all that apply)</span></p>
+      <div>
+        <input type="checkbox" id="facility1" name="facilty1" value="faculty">
+        <label for="facility1">Faculty</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facility2" name="facilty2" value="studentclubs">
+        <label for="facility2">Student Clubs</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facility3" name="facilty3" value="placements">
+        <label for="facility3">Placements</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facility4" name="facilty4" value="research">
+        <label for="facility4">Research</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facility5" name="facilty5" value="libraries">
+        <label for="facility5">Libraries</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facility6" name="facilty6" value="transportation">
+        <label for="facility6">Transportation</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facility7" name="facilty7" value="hostels">
+        <label for="facility7">Hostels</label>
+      </div>
+      <div>
+        <input type="checkbox" id="facility8" name="facilty8" value="sportsfitness">
+        <label for="facility8">Sports and Fitness</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="suggestions" class="block">Any suggestions?</label>
+      <textarea name="suggestions" id="suggestions" placeholder="Enter your suggestions here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
