@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #192432;
+  /* overflow: hidden; */
+}
+
+#navbar {
+  /* border: 2px black solid; */
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  box-shadow: 2px 0px 4px 0 #2c4057;
+}
+
+.icon {
+  /* border: 1px red solid; */
+  color: #ffde24;
+}
+
+#navbar header {
+  /* border: 1px red solid; */
+  margin: 28px auto;
+  width: 70%;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-left: 6px;
+}
+
+.links {
+  /* border: 1px orange solid; */
+  border-top: 2px #fff solid;
+  height: 74%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.links::-webkit-scrollbar-track {
+  box-shadow: inset;
+  border-radius: 10px;
+  background-color: #243447;
+}
+
+.links::-webkit-scrollbar {
+  width: 0px;
+  background-color: #243447;
+}
+
+.links::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset;
+  background-color: #111923;
+}
+
+.nav-link {
+  /* border: 1px red solid; */
+  font-size: 1.2rem;
+  color: #c2d4e8;
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 18px;
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:last-child {
+  margin-bottom: 52px;
+}
+
+#main-doc {
+  width: 75%;
+  margin-left: 25%;
+  padding-top: 14px;
+}
+
+.main-section {
+  /* border: 1px green solid; */
+  padding: 14px 32px;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.content {
+  /* border: 1px red solid; */
+  padding: 14px 20px 4px;
+  color: #fff;
+  font-size: 0.96rem;
+  line-height: 1.6;
+}
+
+li {
+  padding-top: 8px;
+}
+
+code {
+  display: block;
+  background-color: #3b4c69;
+  padding: 14px;
+  margin: 8px 12px;
+  border-radius: 8px;
+  line-height: 2;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #243447;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #243447;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #88aadd;
+}
+
+.mdn {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mdn:hover {
+  text-decoration: underline;
+}
