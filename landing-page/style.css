@@ -351,6 +351,16 @@ input[type="submit"]:hover {
   background-color: #0c0c0c;
 }
 
+#footer {
+  background-color: #7a7a7a;
+}
+
+#footer .copyright {
+  padding: 14px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
 @media screen and (max-width: 768px) {
   #nav-bar {
     width: 75%;
