@@ -11,11 +11,9 @@ body {
   font-family: 'Segoe UI', sans-serif;
   color: #fff;
   background-color: #192432;
-  /* overflow: hidden; */
 }
 
 #navbar {
-  /* border: 2px black solid; */
   width: 25%;
   height: 100%;
   position: fixed;
@@ -26,27 +24,26 @@ body {
 }
 
 .icon {
-  /* border: 1px red solid; */
   color: #ffde24;
+  font-size: 80px;
 }
 
 #navbar header {
-  /* border: 1px red solid; */
   margin: 28px auto;
-  width: 70%;
+  width: 80%;
   text-align: center;
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 2.5vw;
+  width: 100%;
   font-weight: 600;
-  padding-left: 6px;
 }
 
 .links {
-  /* border: 1px orange solid; */
   border-top: 2px #fff solid;
-  height: 74%;
+  border-bottom: 2px #fff solid;
+  height: 72%;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -54,22 +51,24 @@ body {
 .links::-webkit-scrollbar-track {
   box-shadow: inset;
   border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
   background-color: #243447;
 }
 
 .links::-webkit-scrollbar {
-  width: 0px;
+  width: 6px;
   background-color: #243447;
 }
 
 .links::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset;
-  background-color: #111923;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #88aadd;
 }
 
 .nav-link {
-  /* border: 1px red solid; */
+  border-bottom: 1px #9c9c9c dotted;
   font-size: 1.2rem;
   color: #c2d4e8;
   display: inline-block;
@@ -83,7 +82,8 @@ body {
 }
 
 .nav-link:last-child {
-  margin-bottom: 52px;
+  margin-bottom: 64px;
+  border-bottom: none;
 }
 
 #main-doc {
@@ -93,7 +93,6 @@ body {
 }
 
 .main-section {
-  /* border: 1px green solid; */
   padding: 14px 32px;
 }
 
@@ -103,7 +102,6 @@ body {
 }
 
 .content {
-  /* border: 1px red solid; */
   padding: 14px 20px 4px;
   color: #fff;
   font-size: 0.96rem;
@@ -121,6 +119,7 @@ code {
   margin: 8px 12px;
   border-radius: 8px;
   line-height: 2;
+  overflow-wrap: break-word;
 }
 
 body::-webkit-scrollbar-track {
@@ -150,4 +149,38 @@ body::-webkit-scrollbar-thumb {
 
 .mdn:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    font-size: 60px;
+  }
+
+  #navbar {
+    padding: 2px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  #navbar header {
+    margin: 10px auto;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+
+  .links {
+    height: 40vh;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .main-section {
+    padding: 14px 24px;
+  }
 }
