@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  border: 1px red solid;
+  height: 10vh;
+  display: flex;
+}
+
+#navbar-container {
+  border: 1px blue solid;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.home-link {
+  border: 1px green solid;
+  font-size: 3.5rem;
+  width: 50%;
+}
+
+.nav-links {
+  border: 1px green solid;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  padding: 1rem;
+}
+
+.nav-link {
+  border: 1px green solid;
+  font-size: 2rem;
+  padding: 1rem 1.4rem;
+}
+
+#welcome-section {
+  border: 1px red solid;
+  height: 90vh;
+  display: flex;
+}
+
+#welcome-container {
+  border: 1px blue solid;
+  width: 75%;
+  height: 80%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-img {
+  border: 1px green solid;
+  width: 25rem;
+}
+
+.profile-title {
+  font-size: 6rem;
+}
+
+.star-icon {
+  font-size: 3.2rem;
+  padding: 1.4rem;
+}
+
+.star-line {
+  border: 1px orange solid;
+  position: relative;
+}
+
+.star-line::before {
+  content: '';
+  width: 12rem;
+  height: 0.4rem;
+  border-radius: 2rem;
+  background-color: #000;
+  position: absolute;
+  top: 3rem;
+  left: -12rem;
+}
+
+.star-line::after {
+  content: '';
+  width: 12rem;
+  height: 0.4rem;
+  border-radius: 2rem;
+  background-color: #000;
+  position: absolute;
+  top: 3rem;
+  right: -12rem;
+}
+
+.profile-info {
+  font-size: 3.6rem;
+}
