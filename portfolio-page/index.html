@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Personal Portfolio</title>
@@ -11,11 +12,11 @@
 <body>
   <nav id="navbar">
     <div id="navbar-container">
-      <div class="home-link"><a href="#">SHASHIKANTH</a></div>
+      <div class="home-link"><a href="#welcome-section">SHASHIKANTH</a></div>
       <ul class="nav-links">
-        <li><a href="#" class="nav-link">ABOUT</a></li>
-        <li><a href="#" class="nav-link">WORK</a></li>
-        <li><a href="#" class="nav-link">CONTACT</a></li>
+        <li><a href="#projects-section" class="nav-link">PROJECTS</a></li>
+        <li><a href="#about-section" class="nav-link">ABOUT</a></li>
+        <li><a href="#contact-section" class="nav-link">CONTACT</a></li>
       </ul>
     </div>
   </nav>
@@ -29,5 +30,41 @@
       <p class="profile-info">Web Developer</p>
     </div>
   </section>
+  <section id="contact-section">
+    <div id="contact-container">
+      <div class="contact-title">
+        <p>CONTACT ME</p>
+        <div class="star-line dark-line">
+          <i class="star-icon dark-bg fas fa-star"></i>
+        </div>
+      </div>
+      <form action="#">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <textarea name="message" id="message" placeholder="Message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </div>
+  </section>
+  <footer id="footer-section">
+    <div id="contact-details">
+      <div class="contact-details-container">
+        <div class="location">
+          <p class="location-title">LOCATION</p>
+          <img src="img/charminar.png" alt="charminar image" class="location-img">
+          <p class="location-info">Hyderabad, India</p>
+        </div>
+        <div class="web-links">
+          <p class="web-links-title">AROUND THE WEB</p>
+          <a href=""><i class="web-icon fab fa-twitter"></i></a>
+          <a id="profile-link" href=""><i class="web-icon fab fa-github"></i></a>
+          <a href=""><i class="web-icon fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="copyright">
+      <p>Copyright &copy; Portfolio 2020</p>
+    </div>
+  </footer>
 </body>
 </html>
