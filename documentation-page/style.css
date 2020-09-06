@@ -128,8 +128,7 @@ code {
   border-radius: 8px;
   line-height: 2;
   font-size: 1.2rem;
-  white-space: nowrap;
-  overflow: auto;
+  overflow-wrap: break-word;
 }
 
 body::-webkit-scrollbar-track {
@@ -193,5 +192,12 @@ body::-webkit-scrollbar-thumb {
 
   .main-section {
     padding: 14px 24px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  code {
+    white-space: nowrap;
+    overflow: auto;
   }
 }
