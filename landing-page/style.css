@@ -280,75 +280,65 @@ body {
   height: 340px;
 }
 
-#contact {
+#subscribe {
   background-color: #efefef;
   overflow: hidden;
 }
 
-#contact-container {
+#subscribe-container {
   width: 50%;
   margin: auto;
-  padding: 20px 0px 54px;
+  padding: 36px 0px 54px;
 }
 
-#contact-title {
-  padding: 18px 0px;
+#subscribe-title {
+  padding: 12px 0px 4px;
   font-size: 1.8rem;
   text-align: center;
   color: #2c2c2c;
 }
 
+#subscribe-info {
+  padding: 14px 14px 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+}
+
 input[type="email"] {
-  display: block;
-  width: 100%;
-  padding: 12px;
+  display: inline-block;
+  width: 70%;
+  padding: 12px 16px;
   font-size: 1rem;
   background-color: #fff;
-  border: 2px #a8a8a8 solid;
-  border-radius: 8px;
+  border: 1px #c4c4c4 solid;
+  border-radius: 20px 0px 0px 20px;
   outline: none;
-  transition: all 360ms ease-in;
+  transition: all 500ms ease-in;
 }
 
 input[type="email"]:focus {
-  border-color: #2c2c2c;
-}
+  border-color: #000 #c4c4c4 #000 #000;
 
-textarea {
-  display: block;
-  width: 100%;
-  resize: vertical;
-  height: 120px;
-  padding: 12px;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px 0px;
-  background-color: #fff;
-  border: 2px #a8a8a8 solid;
-  border-radius: 8px;
-  outline: none;
-  transition: all 360ms ease-in;
-}
-
-textarea:focus {
-  border-color: #2c2c2c;
 }
 
 input[type="submit"] {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 30%;
   padding: 12px;
   font-size: 1rem;
   color: #fff;
-  background-color: #2d2d2d;
+  background-color: #000;
   border: none;
-  border-radius: 8px;
+  border-radius: 0px 20px 20px 0px;
   cursor: pointer;
   transition: all 300ms ease-in;
 }
 
 input[type="submit"]:hover {
-  background-color: #0c0c0c;
+  background-color: #181818;
 }
 
 #footer {
@@ -404,11 +394,11 @@ input[type="submit"]:hover {
     font-size: 1.8rem;
   }
 
-  #contact-container {
+  #subscribe-container {
     width: 75%;
   }
 
-  #contact-title {
+  #subscribe-title {
     font-size: 1.8rem;
   }
 }
@@ -468,11 +458,11 @@ input[type="submit"]:hover {
     height: 180px;
   }
 
-  #contact-container {
+  #subscribe-container {
     width: 95%;
   }
 
-  #contact-title {
+  #subscribe-title {
     font-size: 1.2rem;
   }
 }
