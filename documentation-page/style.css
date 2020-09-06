@@ -127,7 +127,9 @@ code {
   margin: 8px 12px;
   border-radius: 8px;
   line-height: 2;
-  overflow-wrap: break-word;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: auto;
 }
 
 body::-webkit-scrollbar-track {
