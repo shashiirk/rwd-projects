@@ -80,7 +80,7 @@ a {
 }
 
 #welcome-section {
-  border: 1px white solid;
+  /* border: 1px white solid; */
   background-color: #e8480f;
   color: #fff;
   height: 100vh;
@@ -91,7 +91,7 @@ a {
 #welcome-container {
   border: 1px blue solid;
   width: 75%;
-  height: 80%;
+  /* height: 80%; */
   margin: auto;
   text-align: center;
   display: flex;
@@ -103,6 +103,7 @@ a {
 .profile-img {
   border: 1px green solid;
   width: 25rem;
+  margin: 2rem 0;
 }
 
 .profile-title {
