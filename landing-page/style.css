@@ -352,11 +352,11 @@ input[type="submit"]:hover {
 }
 
 #footer {
-  background-color: #d0d0d0;
+  background-color: #c8c4c8;
 }
 
 #footer .copyright {
-  padding: 18px;
+  padding: 14px;
   text-align: center;
   font-size: 0.8rem;
 }
