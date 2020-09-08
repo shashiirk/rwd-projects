@@ -6,37 +6,38 @@
 
 body {
   font-family: 'Oxygen', sans-serif;
-  background-color: #c8c8c8;
+  background-color: #eef6f1;
 }
 
 header {
   width: 50%;
   margin: 20px auto 0px;
   text-align: center;
-  background-color: #fff;
+  background-color: #34495e;
 }
 
 #title {
   font-size: 3rem;
-  background-color: #004c9f;
-  color: #ffc200;
+  background-color: #f1c40f;
+  color: #0f3cf1;
   padding: 18px 10px;
 }
 
 #heading {
   font-size: 1.6rem;
-  color: #f77f22;
+  color: #e74c3c;
   padding: 10px 10px 4px;
 }
 
 #description {
   font-weight: bold;
-  color: #4e4e4e;
+  color: #ecf0f1;
   padding: 4px 10px 10px;
 }
 
 #survey-form {
-  background-color: #fff;
+  background-color: #34495e;
+  color: #ecf0f1;
   width: 50%;
   margin: 0px auto 20px;
   padding: 2px 24px 2px;
@@ -63,7 +64,7 @@ header {
 
 .form-group label,
 .form-group p {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .form-group input[type="text"],
@@ -75,25 +76,27 @@ header {
   display: block;
   width: 100%;
   padding: 12px;
+  font-family: 'Oxygen', sans-serif;
   font-size: 1rem;
+  font-weight: 600;
   margin: 8px 0px;
-  border: 2px #c8c8c8 solid;
+  border: none;
   border-radius: 5px;
-  background-color: #c8c8c8;
+  background-color: #adb6be;
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="number"],
 .form-group textarea {
-  transition: background 800ms ease;
+  transition: background 400ms ease;
 }
 
 .form-group input[type="text"]::placeholder,
 .form-group input[type="email"]::placeholder,
 .form-group input[type="number"]::placeholder,
 .form-group textarea::placeholder {
-  transition: all 800ms ease;
+  transition: all 400ms ease;
   color: #686868;
 }
 
@@ -101,7 +104,7 @@ header {
 .form-group input[type="email"]:focus::placeholder,
 .form-group input[type="number"]:focus::placeholder, 
 .form-group textarea:focus::placeholder {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .form-group input[type="text"]:focus,
@@ -111,7 +114,6 @@ header {
 .form-group textarea:focus {
   background-color: #fff;
   outline: none;
-  border-color: #c8c8c8;
 }
 
 .form-group input[type="radio"],
@@ -127,7 +129,6 @@ header {
 }
 
 .form-group textarea {
-  font-family: sans-serif;
   font-size: 1rem;
   width: 100%;
   height: 200px;
@@ -135,13 +136,13 @@ header {
 }
 
 select {
-  color: #484848;
+  color: #686868;
 }
 
 .form-group button {
   cursor: pointer;
   color: #fff;
-  background-color: #24bb24;
+  background-color: #14b959;
   border: none;
   font-weight: 600;
   outline: none;
@@ -149,7 +150,7 @@ select {
 }
 
 .form-group button:hover {
-  background-color: #1c961c;
+  background-color: #18a050;
 }
 
 @media screen and (max-width: 768px) {
