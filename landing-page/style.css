@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #header {
@@ -81,7 +81,7 @@ body {
 
 .main-content {
   padding: 20px 0 0;
-  color: #2c2c2c;
+  color: #1b1b1b;
 }
 
 .main-content .title {
@@ -110,8 +110,8 @@ body {
   text-align: center;
   font-size: 3rem;
   margin: 10px auto 30px;
-  width: 85%;
-  color: #2c2c2c;
+  width: 75%;
+  color: #1b1b1b;
 }
 
 #features-container {
@@ -124,7 +124,7 @@ body {
 
 .feature {
   border-radius: 10px;
-  color: #2c2c2c;
+  color: #1b1b1b;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -155,8 +155,8 @@ body {
 }
 
 #products-title {
-  color: #2c2c2c;
-  width: 85%;
+  color: #1b1b1b;
+  width: 75%;
   margin: 32px auto;
   font-size: 2rem;
   text-align: center;
@@ -167,11 +167,12 @@ body {
   margin: 10px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 28px;
+  grid-column-gap: 2%;
 }
 
 .product {
-  height: 620px;
+  height: 640px;
+  overflow: hidden;
 }
 
 .product .image {
@@ -180,6 +181,8 @@ body {
 
 .product .content {
   height: 54%;
+  width: 100%;
+  padding: 12px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -187,19 +190,20 @@ body {
 
 .product-img {
   display: block;
+  max-width: 100%;
   max-height: 100%;
 }
 
 .product-title {
-  margin-bottom: 18px;
-  color: #2c2c2c;
+  margin: 18px 0;
+  color: #1b1b1b;
 }
 
 .special {
   font-size: 0.6rem;
   font-weight: 700;
   padding: 3px;
-  border: 2px #1e1e1e solid;
+  border: 2px #1b1b1b solid;
   border-radius: 4px;
   position: relative;
   left: 2px;
@@ -215,6 +219,10 @@ body {
   justify-content: space-between;
 }
 
+.product-info li {
+  margin-bottom: 18px;
+}
+
 .product-links {
   display: flex;
   flex-direction: column;
@@ -223,7 +231,7 @@ body {
 .buy {
   width: 48px;
   padding: 6px;
-  margin: 32px 0px 14px;
+  margin-bottom: 14px;
   display: inline-block;
   border-radius: 18px;
   background-color: #2268cc;
@@ -269,9 +277,10 @@ body {
 
 #about-title {
   padding: 24px 0px;
+  margin: auto;
   font-size: 2rem;
   text-align: center;
-  color: #2c2c2c;
+  color: #1b1b1b;
 }
 
 #video {
@@ -285,16 +294,17 @@ body {
 }
 
 #subscribe-container {
-  width: 50%;
+  width: 50%; 
   margin: auto;
   padding: 36px 0px 54px;
 }
 
 #subscribe-title {
   padding: 12px 0px 4px;
+  margin: auto;
   font-size: 1.8rem;
   text-align: center;
-  color: #2c2c2c;
+  color: #1b1b1b;
 }
 
 #subscribe-info {
@@ -303,6 +313,7 @@ body {
 }
 
 form {
+  padding: 14px;
   display: flex;
 }
 
@@ -313,14 +324,14 @@ input[type="email"] {
   font-size: 1rem;
   background-color: #fff;
   border: 1px #c4c4c4 solid;
+  border-right: none;
   border-radius: 20px 0px 0px 20px;
   outline: none;
   transition: all 500ms ease-in;
 }
 
 input[type="email"]:focus {
-  border-color: #000 #c4c4c4 #000 #000;
-
+  border-color: #000;
 }
 
 input[type="submit"] {
@@ -333,6 +344,7 @@ input[type="submit"] {
   border: none;
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
+  text-align: center;
   transition: all 300ms ease-in;
 }
 
@@ -379,10 +391,18 @@ input[type="submit"]:hover {
   #products-title {
     font-size: 1.8rem;
   }
+
+  #features-container {
+    width: 90%;
+  }
   
   #products-container {
     width: 85%;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product {
+    height: 560px;
   }
 
   #about-container {
@@ -428,21 +448,61 @@ input[type="submit"]:hover {
   
   #features-title {
     font-size: 1.2rem;
-    width: 95%;
+    width: 80%;
   }
 
   #features-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
   }
 
   #products-title {
     font-size: 1.2rem;
-    width: 95%;
+    width: 80%;
   }
   
   #products-container {
     width: 95%;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
+  }
+
+  .product {
+    height: 540px;
+  }
+
+  .product-title {
+    font-size: 1.2rem;
+  }
+
+  .product-info {
+    font-size: 0.8rem;
+  }
+
+  .product .image {
+    height: 35%;
+  }
+
+  .product .content {
+    height: 65%;
+  }
+
+  .special {
+    font-size: 0.54rem;
+    font-weight: 600;
+    padding: 2px;
+    border: 1.4px #1b1b1b solid;
+    bottom: 4px;
+  }
+  
+  .buy {
+    font-size: 0.7rem;
+    padding: 4px;
+    width: 38px;
+  }
+
+  .learn {
+    font-size: 0.7rem;
   }
 
   #about-container {
@@ -450,7 +510,8 @@ input[type="submit"]:hover {
   }
 
   #about-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    width: 80%;
   }
 
   #video {
@@ -463,6 +524,7 @@ input[type="submit"]:hover {
 
   #subscribe-title {
     font-size: 1.2rem;
+    width: 80%;
   }
 }
 
@@ -481,5 +543,9 @@ input[type="submit"]:hover {
 
   #main-title {
     font-size: 1.8rem;
+  }
+
+  .product {
+    height: 660px;
   }
 }
