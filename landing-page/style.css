@@ -245,6 +245,7 @@ body {
 }
 
 .learn {
+  border: 1px red solid;
   font-size: 0.88rem;
   color: #2268cc;
   display: flex;
@@ -259,7 +260,7 @@ body {
   background-color: #004fcf;
 }
 
-.learn:hover a {
+.learn a:hover {
   color: #004fcf;
   text-decoration: underline;
 }
