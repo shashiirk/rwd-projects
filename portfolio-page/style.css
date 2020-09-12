@@ -32,7 +32,6 @@ a {
 }
 
 #navbar {
-  /* border: 1px red solid; */
   background-color: var(--primary-dark-color);
   width: 100%;
   height: 7rem;
@@ -41,10 +40,10 @@ a {
   top: 0;
   left: 0;
   z-index: 10;
+  overflow: hidden;
 }
 
 #navbar-container {
-  /* border: 1px yellow solid; */
   font-family: 'Ubuntu', sans-serif;
   width: 75%;
   margin: auto;
@@ -60,13 +59,11 @@ a {
   color: var(--secondary-light-color);
   font-size: 3rem;
   width: 48px;
-  /* height: 48px; */
   padding: 2px;
   text-align: center;
 }
 
 .nav-links {
-  /* border: 1px green solid; */
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -74,7 +71,6 @@ a {
 }
 
 .nav-link {
-  /* border: 1px green solid; */
   color: var(--secondary-light-color);
   font-size: 2rem;
   font-weight: bold;
@@ -87,16 +83,15 @@ a {
 }
 
 #welcome-section {
-  border: 1px white solid;
   background-color: var(--primary-light-color);
   color: var(--secondary-light-color);
   height: 100vh;
   display: flex;
   padding: 8rem 0 4rem;
+  overflow: hidden;
 }
 
 #welcome-container {
-  /* border: 1px blue solid; */
   width: 75%;
   margin: auto;
   text-align: center;
@@ -107,7 +102,6 @@ a {
 }
 
 .profile-img {
-  /* border: 1px green solid; */
   width: 25rem;
   margin: 2rem 0;
 }
@@ -123,7 +117,6 @@ a {
 }
 
 .star-line {
-  /* border: 1px orange solid; */
   width: 6rem;
   height: 6rem;
   display: flex;
@@ -168,18 +161,16 @@ a {
 }
 
 #projects {
-  /* border: 1px red solid; */
   padding: 8rem 0;
+  overflow: hidden;
 }
 
 #projects-container {
-  /* border: 1px blue solid; */
   width: 75%;
   margin: auto;
 }
 
 .projects-title {
-  /* border: 1px green solid; */
   color: var(--primary-dark-color);
   text-align: center;
   font-size: 6rem;
@@ -191,7 +182,6 @@ a {
 }
 
 .projects-box {
-  /* border: 1px blue solid; */
   padding-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -199,25 +189,19 @@ a {
 }
 
 .project-tile {
-  /* border: 1px var(--primary-light-color) solid; */
   box-shadow: 2px 2px 8px #8a8a8a, -2px -2px 8px #8a8a8a;
 }
 
 .project-img {
   overflow: hidden;
-  /* border: 1px blue solid; */
-  /* padding: 1rem; */
 }
 
 .project-img img {
-  /* border: 1px red solid; */
-  /* border-radius: 1rem; */
   width: 100%;
 }
 
 .project-title {
   font-size: 2.4rem;
-  /* border: 1px red solid; */
   padding: 1rem;
   text-align: center;
   color: var(--primary-light-color);
@@ -227,7 +211,6 @@ a {
 }
 
 .icon {
-  /* border: 1px green solid; */
   position: relative;
   top: 0.18rem;
   color: var(--secondary-light-color);
@@ -239,19 +222,17 @@ a {
 }
 
 #about-section {
-  /* border: 1px red solid; */
   background-color: var(--primary-light-color);
   padding: 8rem 0;
+  overflow: hidden;
 }
 
 #about-container {
-  /* border: 1px blue solid; */
   width: 75%;
   margin: auto;
 }
 
 .about-title {
-  /* border: 1px green solid; */
   color: var(--secondary-light-color);
   text-align: center;
   font-size: 6rem;
@@ -263,25 +244,22 @@ a {
 }
 
 .about-info {
-  /* border: 1px green solid; */
   padding-top: 1rem;
   font-size: 2.2rem;
   color: var(--secondary-light-color);
 }
 
 #contact-section {
-  /* border: 1px red solid; */
   padding: 8rem 0;
+  overflow: hidden;
 }
 
 #contact-container {
-  /* border: 1px blue solid; */
   width: 50%;
   margin: auto;
 }
 
 .contact-title {
-  /* border: 1px green solid; */
   color: var(--primary-dark-color);
   text-align: center;
   font-size: 6rem;
@@ -290,10 +268,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-form {
-  /* border: 1px red solid; */
 }
 
 input {
@@ -315,8 +289,6 @@ textarea {
   width: 100%;
   height: 18rem;
   resize: none;
-  /* padding: 1.4rem 0; */
-  /* margin: 3rem 0; */
   border: none;
   border-bottom: 1px #c4c4c4 solid;
   outline: none;
@@ -340,23 +312,21 @@ input[type="submit"]:hover {
 
 #footer-section {
   color: var(--secondary-light-color);
+  overflow: hidden;
 }
 
 #contact-details {
-  /* border: 1px #fff solid; */
   background-color: var(--secondary-dark-color);
   padding: 2rem 0;
 }
 
 .contact-details-container {
-  /* border: 1px greenyellow solid; */
   width: 75%;
   margin: auto;
   display: flex;
 }
 
 .location {
-  /* border: 1px green solid; */
   width: 50%;
   text-align: center;
 }
@@ -369,7 +339,6 @@ input[type="submit"]:hover {
 }
 
 .location-img {
-  /* border: 1px red solid; */
   width: 4rem;
 }
 
@@ -378,7 +347,6 @@ input[type="submit"]:hover {
 }
 
 .web-links {
-  /* border: 1px green solid; */
   width: 50%;
   text-align: center;
 }
@@ -403,6 +371,7 @@ input[type="submit"]:hover {
   font-size: 1.4rem;
   padding: 2rem 1rem;
   text-align: center;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 680px) {
