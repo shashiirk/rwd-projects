@@ -35,7 +35,7 @@ a {
   /* border: 1px red solid; */
   background-color: var(--primary-dark-color);
   width: 100%;
-  height: 10vh;
+  height: 7rem;
   display: flex;
   position: fixed;
   top: 0;
@@ -57,7 +57,6 @@ a {
 .home-link-icon {
   display: inline-block;
   border: 3px var(--secondary-light-color) solid;
-  border-radius: 50%;
   color: var(--secondary-light-color);
   font-size: 3rem;
   width: 48px;
@@ -74,7 +73,7 @@ a {
 }
 
 .nav-link {
-  /* border: 1px green solid; */
+  border: 1px green solid;
   color: var(--secondary-light-color);
   font-size: 2rem;
   font-weight: bold;
@@ -92,7 +91,7 @@ a {
   color: var(--secondary-light-color);
   height: 100vh;
   display: flex;
-  padding-top: 10vh;
+  padding: 8rem 0 4rem;
 }
 
 #welcome-container {
@@ -167,14 +166,76 @@ a {
   font-size: 3.6rem;
 }
 
-#about-section {
+#projects-section {
+  border: 1px red solid;
+  padding: 8rem 0;
+}
+
+#projects-container {
+  /* border: 1px blue solid; */
+  width: 75%;
+  margin: auto;
+}
+
+.projects-title {
+  /* border: 1px green solid; */
+  color: var(--primary-dark-color);
+  text-align: center;
+  font-size: 6rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-box {
+  /* border: 1px blue solid; */
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.project {
+  /* border: 1px var(--primary-light-color) solid; */
+  /* border-radius: 1rem; */
+  /* padding: 1rem; */
+  /* background-color: var(--primary-light-color); */
+  box-shadow: 2px 2px 8px #8a8a8a, -2px -2px 8px #8a8a8a;
+}
+
+.project-img {
+  overflow: hidden;
+  /* border: 1px blue solid; */
+  /* padding: 1rem; */
+}
+
+.project-img img {
   /* border: 1px red solid; */
+  /* border-radius: 1rem; */
+  width: 100%;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  border: 1px red solid;
+  padding: 1rem;
+  text-align: center;
+  color: var(--primary-light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-section {
+  border: 1px red solid;
   background-color: var(--primary-light-color);
   padding: 8rem 0;
 }
 
 #about-container {
-  /* border: 1px blue solid; */
+  border: 1px blue solid;
   width: 75%;
   margin: auto;
 }
@@ -193,6 +254,7 @@ a {
 
 .about-info {
   /* border: 1px green solid; */
+  padding-top: 1rem;
   font-size: 2.2rem;
   color: var(--secondary-light-color);
 }
