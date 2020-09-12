@@ -44,7 +44,7 @@ a {
 }
 
 #navbar-container {
-  /* border: 1px blue solid; */
+  /* border: 1px yellow solid; */
   font-family: 'Ubuntu', sans-serif;
   width: 75%;
   margin: auto;
@@ -60,6 +60,7 @@ a {
   color: var(--secondary-light-color);
   font-size: 3rem;
   width: 48px;
+  /* height: 48px; */
   padding: 2px;
   text-align: center;
 }
@@ -73,7 +74,7 @@ a {
 }
 
 .nav-link {
-  border: 1px green solid;
+  /* border: 1px green solid; */
   color: var(--secondary-light-color);
   font-size: 2rem;
   font-weight: bold;
@@ -86,7 +87,7 @@ a {
 }
 
 #welcome-section {
-  /* border: 1px white solid; */
+  border: 1px white solid;
   background-color: var(--primary-light-color);
   color: var(--secondary-light-color);
   height: 100vh;
@@ -167,7 +168,7 @@ a {
 }
 
 #projects {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   padding: 8rem 0;
 }
 
@@ -238,13 +239,13 @@ a {
 }
 
 #about-section {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   background-color: var(--primary-light-color);
   padding: 8rem 0;
 }
 
 #about-container {
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
   width: 75%;
   margin: auto;
 }
@@ -402,4 +403,86 @@ input[type="submit"]:hover {
   font-size: 1.4rem;
   padding: 2rem 1rem;
   text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  html {
+    font-size: 60%;
+  }
+
+  #navbar-container,
+  #welcome-container,
+  #projects-container,
+  #about-container,
+  #contact-container,
+  .contact-details-container {
+    width: 85%;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  html {
+    font-size: 58%;
+  }
+
+  .contact-details-container {
+    flex-direction: column;
+  }
+
+  .location,
+  .web-links {
+    padding: 2rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+
+  #navbar-container,
+  #welcome-container,
+  #projects-container,
+  #about-container,
+  #contact-container,
+  .contact-details-container {
+    width: 90%;
+  }
+
+  .projects-box {
+    grid-template-columns: 1fr;
+  }
+
+  .project-title {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 40%;
+  }
 }
