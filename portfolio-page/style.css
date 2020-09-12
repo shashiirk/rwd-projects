@@ -166,7 +166,7 @@ a {
   font-size: 3.6rem;
 }
 
-#projects-section {
+#projects {
   border: 1px red solid;
   padding: 8rem 0;
 }
@@ -197,11 +197,8 @@ a {
   grid-gap: 4rem;
 }
 
-.project {
+.project-tile {
   /* border: 1px var(--primary-light-color) solid; */
-  /* border-radius: 1rem; */
-  /* padding: 1rem; */
-  /* background-color: var(--primary-light-color); */
   box-shadow: 2px 2px 8px #8a8a8a, -2px -2px 8px #8a8a8a;
 }
 
@@ -219,13 +216,25 @@ a {
 
 .project-title {
   font-size: 2.4rem;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   padding: 1rem;
   text-align: center;
   color: var(--primary-light-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon {
+  /* border: 1px green solid; */
+  position: relative;
+  top: 0.18rem;
+  color: var(--secondary-light-color);
+  transition: color 400ms ease-out;
+}
+
+.project-tile:hover .icon {
+  color: var(--primary-light-color);
 }
 
 #about-section {
