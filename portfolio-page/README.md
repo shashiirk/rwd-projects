@@ -8,4 +8,4 @@ This is a personal portfolio page. Click [here](https://codepen.io/shashiirk/ful
 
 ## Credits
 
-Design inspiration from [here](https://startbootstrap.com/previews/freelancer)
+Design inspiration from [here](https://startbootstrap.com/previews/freelancer).
