@@ -4,4 +4,4 @@ This is a personal portfolio page. Click [here](https://codepen.io/shashiirk/ful
 
 ### Preview
 
-![preview]()
+![preview](https://github.com/shashiirk/rwd-projects/blob/master/portfolio-page/preview/portfolio-page.gif)
